@@ -3,6 +3,7 @@
 Building homebrew taps for python apps, using [mapbox-cli-py](https://github.com/mapbox/mapbox-cli-py) as an example
 
     mkvirtualenv brewit
+    pip install -U pip
     pip install mapboxcli
     pip install homebrew-pypi-poet
     poet -f mapboxcli > ~/work/homebrew-cli/Formula/mapbox.rb

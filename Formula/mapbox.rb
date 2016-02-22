@@ -1,23 +1,28 @@
-class Mapbox < Formula
+class Mapboxcli < Formula
   homepage "https://github.com/mapbox/mapbox-cli-py"
-  url "https://pypi.python.org/packages/source/m/mapboxcli/mapboxcli-0.2.0.tar.gz"
-  sha256 "ef7fa833dde49117ff4d8cbc57481997884625f98c0e5f6bd3019281b6dd08dd"
+  url "https://pypi.python.org/packages/source/m/mapboxcli/mapboxcli-0.3.0.tar.gz"
+  sha256 "c4c43f53c838aec326401089bba8e216610772e77aa0a12b85e312bbb40f0af6"
 
   depends_on :python if MacOS.version <= :snow_leopard
 
   resource "boto3" do
-    url "https://pypi.python.org/packages/source/b/boto3/boto3-1.2.3.tar.gz"
-    sha256 "091206847d296520e5ec57706a5e4b428d017352eb3168c6bcb9a1ac9feab224"
+    url "https://pypi.python.org/packages/source/b/boto3/boto3-1.2.4.tar.gz"
+    sha256 "5540e53323e84845551f0d82f40c7b9e7a83b0c1c4c27464fcce6e265772bb34"
   end
 
   resource "botocore" do
-    url "https://pypi.python.org/packages/source/b/botocore/botocore-1.3.23.tar.gz"
-    sha256 "d2e067bdb3e9b5c26821efc8517a9ced4f9d5f4cd30de14585ed1fe0eb552a02"
+    url "https://pypi.python.org/packages/source/b/botocore/botocore-1.3.28.tar.gz"
+    sha256 "244234d0df9829562fb62b4bfc4a4523ebcfa56d471ff0bd3f08f2e63afd351b"
+  end
+
+  resource "CacheControl" do
+    url "https://pypi.python.org/packages/source/C/CacheControl/CacheControl-0.11.6.tar.gz"
+    sha256 "37dfcb453e7f186c95b330834a1673e022db900d5e3a883f80257c4369477695"
   end
 
   resource "click" do
-    url "https://pypi.python.org/packages/source/c/click/click-6.2.tar.gz"
-    sha256 "fba0ff70f5ebb4cebbf64c40a8fbc222fb7cf825237241e548354dabe3da6a82"
+    url "https://pypi.python.org/packages/source/c/click/click-6.3.tar.gz"
+    sha256 "b720d9faabe193287b71e3c26082b0f249501288e153b7e7cfce3bb87ac8cc1c"
   end
 
   resource "click-plugins" do
@@ -36,8 +41,13 @@ class Mapbox < Formula
   end
 
   resource "futures" do
-    url "https://pypi.python.org/packages/source/f/futures/futures-3.0.4.tar.gz"
-    sha256 "19485d83f7bd2151c0aeaf88fbba3ee50dadfb222ffc3b66a344ef4952b782a3"
+    url "https://pypi.python.org/packages/source/f/futures/futures-3.0.5.tar.gz"
+    sha256 "0542525145d5afc984c88f914a0c85c77527f65946617edb5274f72406f981df"
+  end
+
+  resource "iso3166" do
+    url "https://pypi.python.org/packages/source/i/iso3166/iso3166-0.7.tar.gz"
+    sha256 "d266b2436c96dc06e0dff5401c1799a24a303e328a3f4f3d96fbd59a86b17a98"
   end
 
   resource "jmespath" do
@@ -46,8 +56,8 @@ class Mapbox < Formula
   end
 
   resource "mapbox" do
-    url "https://pypi.python.org/packages/source/m/mapbox/mapbox-0.6.0.tar.gz"
-    sha256 "0c9d1afa568bedfbd13f95b045244f0ede76d5081c36a9c9ba3da66e90e6dc10"
+    url "https://pypi.python.org/packages/source/m/mapbox/mapbox-0.7.0.tar.gz"
+    sha256 "8670324a44ffced88b4b35cf7e091d78a08f431dd3332a77aef6d090e7dc1859"
   end
 
   resource "python-dateutil" do
@@ -72,7 +82,7 @@ class Mapbox < Formula
 
   def install
     ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python2.7/site-packages"
-    %w[boto3 botocore click click-plugins cligj docutils futures jmespath mapbox python-dateutil requests six uritemplate.py].each do |r|
+    %w[boto3 botocore CacheControl click click-plugins cligj docutils futures iso3166 jmespath mapbox python-dateutil requests six uritemplate.py].each do |r|
       resource(r).stage do
         system "python", *Language::Python.setup_install_args(libexec/"vendor")
       end
