@@ -7,6 +7,13 @@ Building homebrew taps for python apps, using [mapbox-cli-py](https://github.com
     pip install mapboxcli
     pip install homebrew-pypi-poet
     poet -f mapboxcli > ~/work/homebrew-cli/Formula/mapbox.rb
+    
+if the formula name and the python package name are not exactly equal, manually edit. For example,
+
+```diff
+-class Mapboxcli < Formula
++class Mapbox < Formula
+```
 
 ## Why taps?
 
