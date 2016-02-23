@@ -1,7 +1,7 @@
 class Mapbox < Formula
   homepage "https://github.com/mapbox/mapbox-cli-py"
-  url "https://pypi.python.org/packages/source/m/mapboxcli/mapboxcli-0.3.0.tar.gz"
-  sha256 "c4c43f53c838aec326401089bba8e216610772e77aa0a12b85e312bbb40f0af6"
+  url "https://pypi.python.org/packages/source/m/mapboxcli/mapboxcli-0.3.1.tar.gz"
+  sha256 "18a630cbe1dd27ecc05c0a3b5c3f873310716701daa0198568013f61a91fb602"
 
   depends_on :python if MacOS.version <= :snow_leopard
 
