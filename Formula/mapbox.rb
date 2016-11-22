@@ -1,24 +1,26 @@
 class Mapbox < Formula
-  desc "Mapbox"
-  homepage "https://github.com/mapbox/mapbox-cli-py"
-  url "https://files.pythonhosted.org/packages/6b/2a/44c5cb069cd22b9ef37195e62c0118514b166c1ff5c85a53a90cca554676/mapboxcli-0.4.0.tar.gz"
-  sha256 "d13993d56a51e93c102f734e13e162a587553f1fd0df1f73841c130888d3e3a3"
+  include Language::Python::Virtualenv
 
-  depends_on :python if MacOS.version <= :snow_leopard
+  desc "Shiny new formula"
+  homepage "https://github.com/mapbox/mapbox-cli-py"
+  url "https://files.pythonhosted.org/packages/19/2c/a56df881dbb825465df3a0bb039cb050ccd3de5cf8b604cc7d6b2f71fdcb/mapboxcli-0.5.0.tar.gz"
+  sha256 "4322a8dd6f8ba0a2749feb76a870a845ef7d5273a3408c0b2067d205e498b4df"
+
+  depends_on :python
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/d9/6c/1063a4984d13f1b22edb30f3b97b6df7e0bdc7792ebc2f638b31f8b2ff79/boto3-1.3.1.tar.gz"
-    sha256 "6e4d33f2935580278af84b8d63760306d9586a5144780e4ba37737a1f2bdc56f"
+    url "https://files.pythonhosted.org/packages/8c/d8/1a8d499ab1e5dc50115db17ceacb0e33ec6a3a05d84169841a185ffcf906/boto3-1.4.1.tar.gz"
+    sha256 "f73644c495f24020f20d0f6c22b9b8c4bba13416a2a17ad27120a5a24ac52e3b"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/3c/7e/59920da3ec8ea9f841bb56a4f9ee8f595b8005f743bfec3c63c9e411afd1/botocore-1.4.27.tar.gz"
-    sha256 "1d18565c45ab1eeb7e5e237c7aa1ce81b6376fa63e5a9d948c5bcdfb5fe27d75"
+    url "https://files.pythonhosted.org/packages/1c/82/97297c1fac3fd33ed490151e955e57b0d5648c1cef287154b8ef81182edc/botocore-1.4.77.tar.gz"
+    sha256 "102f1dca9437eecf363cd7c63d340b8abc2904f099d7f32f0de18b7ddabc4342"
   end
 
   resource "CacheControl" do
-    url "https://files.pythonhosted.org/packages/45/d2/12396e09b056bcad53bb923253f9c30ffd8a1e8ae1a310c3b21b3d5fa421/CacheControl-0.11.6.tar.gz"
-    sha256 "37dfcb453e7f186c95b330834a1673e022db900d5e3a883f80257c4369477695"
+    url "https://files.pythonhosted.org/packages/c5/cb/7a78039c1e0d4e5fd9d8e9edf7ae34df469267e1c58873ca11af16e96bd8/CacheControl-0.11.7.tar.gz"
+    sha256 "8f7829d92584f1f2360ebfff4517ee359787d5b7dfa2ef9579f871b628745a1e"
   end
 
   resource "click" do
@@ -57,8 +59,8 @@ class Mapbox < Formula
   end
 
   resource "mapbox" do
-    url "https://files.pythonhosted.org/packages/3a/15/3071ac5e41a66a618247c41bcba1e78445846a4b8527559e9451dae686ec/mapbox-0.9.0.tar.gz"
-    sha256 "0df5d7f6eea830f31d25e91fc0c211870e9ea3fb51e49c54d93cba58a0b2d22f"
+    url "https://files.pythonhosted.org/packages/bd/61/126f71e29d388eddab120a41c6397f85c79875078c7b511e23b127618107/mapbox-0.10.0.tar.gz"
+    sha256 "338198a2329ea6e3df003faeb7e474a44271c125d91c1d102ee193788884dccd"
   end
 
   resource "polyline" do
@@ -67,13 +69,18 @@ class Mapbox < Formula
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/3e/f5/aad82824b369332a676a90a8c0d1e608b17e740bbb6aeeebca726f17b902/python-dateutil-2.5.3.tar.gz"
-    sha256 "1408fdb07c6a1fa9997567ce3fcee6a337b39a503d80699e0f213de4aa4b32ed"
+    url "https://files.pythonhosted.org/packages/51/fc/39a3fbde6864942e8bb24c93663734b74e281b984d1b8c4f95d64b0c21f6/python-dateutil-2.6.0.tar.gz"
+    sha256 "62a2f8df3d66f878373fd0072eacf4ee52194ba302e00082828e0d263b0418d2"
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/49/6f/183063f01aae1e025cf0130772b55848750a2f3a89bfa11b385b35d7329d/requests-2.10.0.tar.gz"
-    sha256 "63f1815788157130cee16a933b2ee184038e975f0017306d723ac326b5525b54"
+    url "https://files.pythonhosted.org/packages/6e/40/7434b2d9fe24107ada25ec90a1fc646e97f346130a2c51aa6a2b1aba28de/requests-2.12.1.tar.gz"
+    sha256 "2109ecea94df90980be040490ff1d879971b024861539abb00054062388b612e"
+  end
+
+  resource "s3transfer" do
+    url "https://files.pythonhosted.org/packages/e6/e0/61bf352050b0d687755cd1a41ead378e6b1b48f8754076c413e816fcc1ee/s3transfer-0.1.9.tar.gz"
+    sha256 "17ad7d672115f93a72ed7917209cb0bb02fc87f96f11886408ed8a6b1bb4c754"
   end
 
   resource "six" do
@@ -81,24 +88,18 @@ class Mapbox < Formula
     sha256 "105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a"
   end
 
+  resource "uritemplate" do
+    url "https://files.pythonhosted.org/packages/cd/db/f7b98cdc3f81513fb25d3cbe2501d621882ee81150b745cdd1363278c10a/uritemplate-3.0.0.tar.gz"
+    sha256 "c02643cebe23fc8adb5e6becffe201185bf06c40bda5c0b4028a93f1527d011d"
+  end
+
   resource "uritemplate.py" do
-    url "https://files.pythonhosted.org/packages/5d/01/5a25ca621674d8c0a00cf034c23fc7901dffa8fdeaff5199b9d0e6e0fded/uritemplate.py-0.3.0.tar.gz"
-    sha256 "fd79aa529a7968c62d96ac6731a94349c5a615dac74968526c573c65796c7b77"
+    url "https://files.pythonhosted.org/packages/12/97/e12695c7d7710143767022ce931061b4a6b5b19982b20ecf5d71cdde3da1/uritemplate.py-3.0.2.tar.gz"
+    sha256 "e0cdeb0f55ec18e1580974e8017cd188549aacc2aba664ae756adb390b9d45b4"
   end
 
   def install
-    ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python2.7/site-packages"
-    %w[boto3 botocore CacheControl click click-plugins cligj docutils futures iso3166 jmespath mapbox polyline python-dateutil requests six uritemplate.py].each do |r|
-      resource(r).stage do
-        system "python", *Language::Python.setup_install_args(libexec/"vendor")
-      end
-    end
-
-    ENV.prepend_create_path "PYTHONPATH", libexec/"lib/python2.7/site-packages"
-    system "python", *Language::Python.setup_install_args(libexec)
-
-    bin.install Dir[libexec/"bin/*"]
-    bin.env_script_all_files(libexec/"bin", :PYTHONPATH => ENV["PYTHONPATH"])
+    virtualenv_install_with_resources
   end
 
   test do
