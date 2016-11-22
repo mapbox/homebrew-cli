@@ -3,8 +3,8 @@ class Mapbox < Formula
 
   desc "Shiny new formula"
   homepage "https://github.com/mapbox/mapbox-cli-py"
-  url "https://files.pythonhosted.org/packages/19/2c/a56df881dbb825465df3a0bb039cb050ccd3de5cf8b604cc7d6b2f71fdcb/mapboxcli-0.5.0.tar.gz"
-  sha256 "4322a8dd6f8ba0a2749feb76a870a845ef7d5273a3408c0b2067d205e498b4df"
+  url "https://files.pythonhosted.org/packages/72/32/4159fa6f934939cfa49d4c6c7ced2ec92d1ec58a7beed395f16ac6fab943/mapboxcli-0.5.1.tar.gz"
+  sha256 "bb08e4632a8d8a1a2016a0e1bc2eb467581322bedf5cf2935f5586fc6d45fd34"
 
   depends_on :python
 
@@ -59,8 +59,8 @@ class Mapbox < Formula
   end
 
   resource "mapbox" do
-    url "https://files.pythonhosted.org/packages/bd/61/126f71e29d388eddab120a41c6397f85c79875078c7b511e23b127618107/mapbox-0.10.0.tar.gz"
-    sha256 "338198a2329ea6e3df003faeb7e474a44271c125d91c1d102ee193788884dccd"
+    url "https://files.pythonhosted.org/packages/3a/bb/85cb863e35ea2015b19b930bf0655bd10f00b9fc4c8bbb30b3747da9d04f/mapbox-0.10.1.tar.gz"
+    sha256 "9f34c7e88a57afd074ed241eb24b8689693a817e05dd6422b38cc35b96707f83"
   end
 
   resource "polyline" do
@@ -91,11 +91,6 @@ class Mapbox < Formula
   resource "uritemplate" do
     url "https://files.pythonhosted.org/packages/cd/db/f7b98cdc3f81513fb25d3cbe2501d621882ee81150b745cdd1363278c10a/uritemplate-3.0.0.tar.gz"
     sha256 "c02643cebe23fc8adb5e6becffe201185bf06c40bda5c0b4028a93f1527d011d"
-  end
-
-  resource "uritemplate.py" do
-    url "https://files.pythonhosted.org/packages/12/97/e12695c7d7710143767022ce931061b4a6b5b19982b20ecf5d71cdde3da1/uritemplate.py-3.0.2.tar.gz"
-    sha256 "e0cdeb0f55ec18e1580974e8017cd188549aacc2aba664ae756adb390b9d45b4"
   end
 
   def install
