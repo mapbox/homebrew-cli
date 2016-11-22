@@ -15,6 +15,8 @@ if the formula name and the python package name are not exactly equal, manually 
 +class Mapbox < Formula
 ```
 
+Beware the the `poet` script will hit pypi's JSON endpoint to find src releases and server side caching may prevent it from seeing recent releases. Pay attention to warnings!
+
 ## Why taps?
 
 Why not submit PRs to Homebrew/homebrew?
