@@ -93,11 +93,6 @@ class Mapbox < Formula
     sha256 "c02643cebe23fc8adb5e6becffe201185bf06c40bda5c0b4028a93f1527d011d"
   end
 
-  resource "uritemplate.py" do
-    url "https://files.pythonhosted.org/packages/12/97/e12695c7d7710143767022ce931061b4a6b5b19982b20ecf5d71cdde3da1/uritemplate.py-3.0.2.tar.gz"
-    sha256 "e0cdeb0f55ec18e1580974e8017cd188549aacc2aba664ae756adb390b9d45b4"
-  end
-
   def install
     virtualenv_install_with_resources
   end
