@@ -63,6 +63,11 @@ class Mapbox < Formula
     sha256 "9f34c7e88a57afd074ed241eb24b8689693a817e05dd6422b38cc35b96707f83"
   end
 
+  resource "six" do
+    url "https://files.pythonhosted.org/packages/b3/b2/238e2590826bfdd113244a40d9d3eb26918bd798fc187e2360a8367068db/six-1.10.0.tar.gz"
+    sha256 "105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a"
+  end
+
   resource "polyline" do
     url "https://files.pythonhosted.org/packages/d6/51/18412cd3977e705f35561b4f286a315c6340654e8d6b4dff0b4a6c04af07/polyline-1.3.1.tar.gz"
     sha256 "02fa0f6dd41fc53c0967c715a15a49d0003840ffd7b74d7ba0084dd07d164c34"
@@ -81,11 +86,6 @@ class Mapbox < Formula
   resource "s3transfer" do
     url "https://files.pythonhosted.org/packages/e6/e0/61bf352050b0d687755cd1a41ead378e6b1b48f8754076c413e816fcc1ee/s3transfer-0.1.9.tar.gz"
     sha256 "17ad7d672115f93a72ed7917209cb0bb02fc87f96f11886408ed8a6b1bb4c754"
-  end
-
-  resource "six" do
-    url "https://files.pythonhosted.org/packages/b3/b2/238e2590826bfdd113244a40d9d3eb26918bd798fc187e2360a8367068db/six-1.10.0.tar.gz"
-    sha256 "105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a"
   end
 
   resource "uritemplate" do
