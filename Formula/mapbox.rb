@@ -3,29 +3,29 @@ class Mapbox < Formula
 
   desc "Shiny new formula"
   homepage "https://github.com/mapbox/mapbox-cli-py"
-  url "https://files.pythonhosted.org/packages/72/32/4159fa6f934939cfa49d4c6c7ced2ec92d1ec58a7beed395f16ac6fab943/mapboxcli-0.5.1.tar.gz"
-  sha256 "bb08e4632a8d8a1a2016a0e1bc2eb467581322bedf5cf2935f5586fc6d45fd34"
+  url "https://files.pythonhosted.org/packages/2f/fa/1b3b1f7596c0ca7a34bbfab9f8cc742b8369c2e18579e72c7d7125c2c06a/mapboxcli-0.6.1.tar.gz"
+  sha256 "3dbfc579b3cda7e0fd38c393afab9391ed572804da58c119cf39fa5a8006550d"
 
   depends_on :python
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/8c/d8/1a8d499ab1e5dc50115db17ceacb0e33ec6a3a05d84169841a185ffcf906/boto3-1.4.1.tar.gz"
-    sha256 "f73644c495f24020f20d0f6c22b9b8c4bba13416a2a17ad27120a5a24ac52e3b"
+    url "https://files.pythonhosted.org/packages/58/61/50d2e459049c5dbc963473a71fae928ac0e58ffe3fe7afd24c817ee210b9/boto3-1.4.4.tar.gz"
+    sha256 "518f724c4758e5a5bed114fbcbd1cf470a15306d416ff421a025b76f1d390939"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/1c/82/97297c1fac3fd33ed490151e955e57b0d5648c1cef287154b8ef81182edc/botocore-1.4.77.tar.gz"
-    sha256 "102f1dca9437eecf363cd7c63d340b8abc2904f099d7f32f0de18b7ddabc4342"
+    url "https://files.pythonhosted.org/packages/e4/f9/b7026f410edf33b6c10143482b42d0168c7ffdb14dcc89fe0eb4c7f2d7c9/botocore-1.5.38.tar.gz"
+    sha256 "dd6314cee663ccbb96aa115ec188075567df685956e43df22e795cf450d49b11"
   end
 
   resource "CacheControl" do
-    url "https://files.pythonhosted.org/packages/c5/cb/7a78039c1e0d4e5fd9d8e9edf7ae34df469267e1c58873ca11af16e96bd8/CacheControl-0.11.7.tar.gz"
-    sha256 "8f7829d92584f1f2360ebfff4517ee359787d5b7dfa2ef9579f871b628745a1e"
+    url "https://files.pythonhosted.org/packages/d2/6c/221f699710a6a643bd9a4324cf22ffb9fb73a089d2bfbed5fe4694f3caaf/CacheControl-0.12.2.tar.gz"
+    sha256 "d7d919830d7edc5f4b355fa678a2ea49e9ccb67966abc373ec20f93f3f471265"
   end
 
   resource "click" do
-    url "https://files.pythonhosted.org/packages/7a/00/c14926d8232b36b08218067bcd5853caefb4737cda3f0a47437151344792/click-6.6.tar.gz"
-    sha256 "cc6a19da8ebff6e7074f731447ef7e112bd23adf3de5c597cf9989f2fd8defe9"
+    url "https://files.pythonhosted.org/packages/95/d9/c3336b6b5711c3ab9d1d3a80f1a3e2afeb9d8c02a7166462f6cc96570897/click-6.7.tar.gz"
+    sha256 "f15516df478d5a56180fbf80e68f206010e6d160fc39fa508b65e035fd75130b"
   end
 
   resource "click-plugins" do
@@ -39,8 +39,8 @@ class Mapbox < Formula
   end
 
   resource "docutils" do
-    url "https://files.pythonhosted.org/packages/37/38/ceda70135b9144d84884ae2fc5886c6baac4edea39550f28bcd144c1234d/docutils-0.12.tar.gz"
-    sha256 "c7db717810ab6965f66c8cf0398a98c9d8df982da39b4cd7f162911eb89596fa"
+    url "https://files.pythonhosted.org/packages/05/25/7b5484aca5d46915493f1fd4ecb63c38c333bd32aa9ad6e19da8d08895ae/docutils-0.13.1.tar.gz"
+    sha256 "718c0f5fb677be0f34b781e04241c4067cbd9327b66bdd8e763201130f5175be"
   end
 
   resource "futures" do
@@ -49,28 +49,28 @@ class Mapbox < Formula
   end
 
   resource "iso3166" do
-    url "https://files.pythonhosted.org/packages/6f/93/3e2358e76384ef696cbbce42e92f7ebb422355c015061938e9f2aa2448cd/iso3166-0.7.tar.gz"
-    sha256 "d266b2436c96dc06e0dff5401c1799a24a303e328a3f4f3d96fbd59a86b17a98"
+    url "https://files.pythonhosted.org/packages/46/06/64145b8d6be8474db1f09f6b01a083921c11a4c979d029677c7e943d2433/iso3166-0.8.tar.gz"
+    sha256 "fbeb17bed90d15b1f6d6794aa2ea458e5e273a1d29b6f4939423c97640e14933"
   end
 
   resource "jmespath" do
-    url "https://files.pythonhosted.org/packages/8f/d8/6e3e602a3e90c5e3961d3d159540df6b2ff32f5ab2ee8ee1d28235a425c1/jmespath-0.9.0.tar.gz"
-    sha256 "08dfaa06d4397f283a01e57089f3360e3b52b5b9da91a70e1fd91e9f0cdd3d3d"
+    url "https://files.pythonhosted.org/packages/96/6e/0723cccec195a37de6a428ad8879fe063b6debe5c855444e9285b27d253e/jmespath-0.9.2.tar.gz"
+    sha256 "54c441e2e08b23f12d7fa7d8e6761768c47c969e6aed10eead57505ba760aee9"
   end
 
   resource "mapbox" do
-    url "https://files.pythonhosted.org/packages/3a/bb/85cb863e35ea2015b19b930bf0655bd10f00b9fc4c8bbb30b3747da9d04f/mapbox-0.10.1.tar.gz"
-    sha256 "9f34c7e88a57afd074ed241eb24b8689693a817e05dd6422b38cc35b96707f83"
+    url "https://files.pythonhosted.org/packages/26/e7/004764906a96bd2d0b725c19146ef0d1fb3019ec04ead0c5ed709e6da164/mapbox-0.11.0.tar.gz"
+    sha256 "98bbb8fdf09bcfa19952f39513d76ef64a5958c7fb20eccbb3bf61f5129e24bf"
   end
 
-  resource "six" do
-    url "https://files.pythonhosted.org/packages/b3/b2/238e2590826bfdd113244a40d9d3eb26918bd798fc187e2360a8367068db/six-1.10.0.tar.gz"
-    sha256 "105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a"
+  resource "msgpack-python" do
+    url "https://files.pythonhosted.org/packages/21/27/8a1d82041c7a2a51fcc73675875a5f9ea06c2663e02fcfeb708be1d081a0/msgpack-python-0.4.8.tar.gz"
+    sha256 "1a2b19df0f03519ec7f19f826afb935b202d8979b0856c6fb3dc28955799f886"
   end
 
   resource "polyline" do
-    url "https://files.pythonhosted.org/packages/d6/51/18412cd3977e705f35561b4f286a315c6340654e8d6b4dff0b4a6c04af07/polyline-1.3.1.tar.gz"
-    sha256 "02fa0f6dd41fc53c0967c715a15a49d0003840ffd7b74d7ba0084dd07d164c34"
+    url "https://files.pythonhosted.org/packages/91/8b/c8379135125e858b8baca52fe97a51c91ad448b12e62f7aa1a66c3ec0443/polyline-1.3.2.tar.gz"
+    sha256 "40c017e7b35bee5a773f8a4d27a98bcd1daa2564bad4d3b5494481054b2bbe28"
   end
 
   resource "python-dateutil" do
@@ -79,13 +79,18 @@ class Mapbox < Formula
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/6e/40/7434b2d9fe24107ada25ec90a1fc646e97f346130a2c51aa6a2b1aba28de/requests-2.12.1.tar.gz"
-    sha256 "2109ecea94df90980be040490ff1d879971b024861539abb00054062388b612e"
+    url "https://files.pythonhosted.org/packages/16/09/37b69de7c924d318e51ece1c4ceb679bf93be9d05973bb30c35babd596e2/requests-2.13.0.tar.gz"
+    sha256 "5722cd09762faa01276230270ff16af7acf7c5c45d623868d9ba116f15791ce8"
   end
 
   resource "s3transfer" do
-    url "https://files.pythonhosted.org/packages/e6/e0/61bf352050b0d687755cd1a41ead378e6b1b48f8754076c413e816fcc1ee/s3transfer-0.1.9.tar.gz"
-    sha256 "17ad7d672115f93a72ed7917209cb0bb02fc87f96f11886408ed8a6b1bb4c754"
+    url "https://files.pythonhosted.org/packages/8b/13/517e8ec7c13f0bb002be33fbf53c4e3198c55bb03148827d72064426fe6e/s3transfer-0.1.10.tar.gz"
+    sha256 "ba1a9104939b7c0331dc4dd234d79afeed8b66edce77bbeeecd4f56de74a0fc1"
+  end
+
+  resource "six" do
+    url "https://files.pythonhosted.org/packages/b3/b2/238e2590826bfdd113244a40d9d3eb26918bd798fc187e2360a8367068db/six-1.10.0.tar.gz"
+    sha256 "105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a"
   end
 
   resource "uritemplate" do
