@@ -1,10 +1,10 @@
 class Mapbox < Formula
   include Language::Python::Virtualenv
 
-  desc "Shiny new formula"
+  desc "Command line interface to Mapbox APIs"
   homepage "https://github.com/mapbox/mapbox-cli-py"
-  url "https://files.pythonhosted.org/packages/2f/fa/1b3b1f7596c0ca7a34bbfab9f8cc742b8369c2e18579e72c7d7125c2c06a/mapboxcli-0.6.1.tar.gz"
-  sha256 "3dbfc579b3cda7e0fd38c393afab9391ed572804da58c119cf39fa5a8006550d"
+  url "https://files.pythonhosted.org/packages/0e/64/e06c62468f13873064a03701ced3aa8249eeca45ab34f2d53ac4ded95ba6/mapboxcli-0.7.0.tar.gz"
+  sha256 "ecff067261d1f5399f38bd60dec75f35b5dcdc4dd4f130fb63e5cab0c5483d0b"
 
   depends_on :python
 
@@ -14,8 +14,8 @@ class Mapbox < Formula
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/e4/f9/b7026f410edf33b6c10143482b42d0168c7ffdb14dcc89fe0eb4c7f2d7c9/botocore-1.5.38.tar.gz"
-    sha256 "dd6314cee663ccbb96aa115ec188075567df685956e43df22e795cf450d49b11"
+    url "https://files.pythonhosted.org/packages/a1/dd/4e5a28fe4697673218f0d9ecb529ccb3c5562f945c7c0b0d255ddc67100a/botocore-1.5.53.tar.gz"
+    sha256 "1c4e4ecdc6659836a23733566452621644ffa5e158f447459f0f1ca0fda1ac31"
   end
 
   resource "CacheControl" do
@@ -44,8 +44,8 @@ class Mapbox < Formula
   end
 
   resource "futures" do
-    url "https://files.pythonhosted.org/packages/55/db/97c1ca37edab586a1ae03d6892b6633d8eaa23b23ac40c7e5bbc55423c78/futures-3.0.5.tar.gz"
-    sha256 "0542525145d5afc984c88f914a0c85c77527f65946617edb5274f72406f981df"
+    url "https://files.pythonhosted.org/packages/cc/26/b61e3a4eb50653e8a7339d84eeaa46d1e93b92951978873c220ae64d0733/futures-3.1.1.tar.gz"
+    sha256 "51ecb45f0add83c806c68e4b06106f90db260585b25ef2abfcda0bd95c0132fd"
   end
 
   resource "iso3166" do
@@ -59,8 +59,8 @@ class Mapbox < Formula
   end
 
   resource "mapbox" do
-    url "https://files.pythonhosted.org/packages/26/e7/004764906a96bd2d0b725c19146ef0d1fb3019ec04ead0c5ed709e6da164/mapbox-0.11.0.tar.gz"
-    sha256 "98bbb8fdf09bcfa19952f39513d76ef64a5958c7fb20eccbb3bf61f5129e24bf"
+    url "https://files.pythonhosted.org/packages/fe/31/5f09b6b48f1690c74639753080b2e393c42194ff8d4145e14e203531239d/mapbox-0.13.0.tar.gz"
+    sha256 "3c62e944a42c26deb9e26cf70716d6980218ba9f2c562c037ef1ef7731539642"
   end
 
   resource "msgpack-python" do
@@ -79,8 +79,8 @@ class Mapbox < Formula
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/16/09/37b69de7c924d318e51ece1c4ceb679bf93be9d05973bb30c35babd596e2/requests-2.13.0.tar.gz"
-    sha256 "5722cd09762faa01276230270ff16af7acf7c5c45d623868d9ba116f15791ce8"
+    url "https://files.pythonhosted.org/packages/72/46/4abc3f5aaf7bf16a52206bb0c68677a26c216c1e6625c78c5aef695b5359/requests-2.14.2.tar.gz"
+    sha256 "a274abba399a23e8713ffd2b5706535ae280ebe2b8069ee6a941cb089440d153"
   end
 
   resource "s3transfer" do
