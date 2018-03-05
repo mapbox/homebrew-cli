@@ -6,7 +6,7 @@ class Mapbox < Formula
   url "https://files.pythonhosted.org/packages/0e/64/e06c62468f13873064a03701ced3aa8249eeca45ab34f2d53ac4ded95ba6/mapboxcli-0.7.0.tar.gz"
   sha256 "ecff067261d1f5399f38bd60dec75f35b5dcdc4dd4f130fb63e5cab0c5483d0b"
 
-  depends_on :python
+  depends_on "python"
 
   resource "boto3" do
     url "https://files.pythonhosted.org/packages/58/61/50d2e459049c5dbc963473a71fae928ac0e58ffe3fe7afd24c817ee210b9/boto3-1.4.4.tar.gz"
