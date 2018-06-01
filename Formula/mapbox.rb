@@ -3,19 +3,19 @@ class Mapbox < Formula
 
   desc "Command line interface to Mapbox APIs"
   homepage "https://github.com/mapbox/mapbox-cli-py"
-  url "https://files.pythonhosted.org/packages/3a/15/6bc17f19ed885cf9704c7ef5a603e01300661b03e87bf3863eb65e91e8d7/mapboxcli-0.7.1.tar.gz"
-  sha256 "8879922c781e0e1c1adbfd93951a5cae174b1547c5e2759277c21aa771a31f86"
+  url "https://files.pythonhosted.org/packages/e4/2c/09615c08f4c164e840a95da3969fb45fb9f6b6631970abf5737c78572fba/mapboxcli-0.8.0.tar.gz"
+  sha256 "c25c8ab56ac19d4c45fa15c6b14be87ceebc88dcee632642281248824b643636"
 
   depends_on "python"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/1f/f9/a5bbc3da6bb3934e20200767d0a9e0bc04fa77d7afa437bba8d513b9715a/boto3-1.7.27.tar.gz"
-    sha256 "b56b171d81c3dcf63821597439b965b57417744194fea97f2db0cc9481d90ed7"
+    url "https://files.pythonhosted.org/packages/8d/da/0067b54936a995d744d37be67cae6b913b29fc45cf316a7409638a65a95f/boto3-1.7.30.tar.gz"
+    sha256 "38a811f3335b08690182fdbddb07f0cb5e8f0b5bccbcf9ef606ed2a2508a9fd7"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/7a/9a/36d102c0b7b6426e690c333c765d839cc17398faf4ecefb1b25cb085ecb1/botocore-1.10.27.tar.gz"
-    sha256 "e7c7d2ff2d36572ea7dfa5b5e5144e662c3973fbcc7ad33824491e508d07dc92"
+    url "https://files.pythonhosted.org/packages/46/35/b542e3011ac16e3b6d9b7d5f777b500c4cc62bff853ec7960a6cad32b5da/botocore-1.10.30.tar.gz"
+    sha256 "1f6d0a135c9505e0840b675e6bd6b556c85df2e63212ac6850f77edf9f68311a"
   end
 
   resource "CacheControl" do
@@ -74,8 +74,8 @@ class Mapbox < Formula
   end
 
   resource "mapbox" do
-    url "https://files.pythonhosted.org/packages/2e/20/56617e5a6c62309c62499ac7959b06ddf337840cd05294999d470ba782f8/mapbox-0.14.0.tar.gz"
-    sha256 "bf127bd876f954d34d16604b3451e42abe4ca32f329aa3575208e6adcc528219"
+    url "https://files.pythonhosted.org/packages/c2/88/bdd4cb4939e55664ee4d05309ecc0038f26fff6328bbbfe9a8e8516df949/mapbox-0.16.1.tar.gz"
+    sha256 "628fd3218794ad846eb05bd1fcde9802d6753ed49311f5acfee6f9fddb104c99"
   end
 
   resource "msgpack-python" do
