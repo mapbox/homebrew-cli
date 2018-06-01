@@ -6,16 +6,16 @@ class Mapbox < Formula
   url "https://files.pythonhosted.org/packages/e4/2c/09615c08f4c164e840a95da3969fb45fb9f6b6631970abf5737c78572fba/mapboxcli-0.8.0.tar.gz"
   sha256 "c25c8ab56ac19d4c45fa15c6b14be87ceebc88dcee632642281248824b643636"
 
-  depends_on "python"
+  depends_on "python3"
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/8d/da/0067b54936a995d744d37be67cae6b913b29fc45cf316a7409638a65a95f/boto3-1.7.30.tar.gz"
-    sha256 "38a811f3335b08690182fdbddb07f0cb5e8f0b5bccbcf9ef606ed2a2508a9fd7"
+    url "https://files.pythonhosted.org/packages/ca/e6/fd5a7ef3fc6c9cbac99bc0141bcae5cfeb72b486a007322d07091b932c93/boto3-1.7.31.tar.gz"
+    sha256 "28ea099b76d6b18210109cb8f7d5452a4ba48992e85696fa0ede33793af5ba69"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/46/35/b542e3011ac16e3b6d9b7d5f777b500c4cc62bff853ec7960a6cad32b5da/botocore-1.10.30.tar.gz"
-    sha256 "1f6d0a135c9505e0840b675e6bd6b556c85df2e63212ac6850f77edf9f68311a"
+    url "https://files.pythonhosted.org/packages/32/73/bb602fa92122d3dc4a656aa0532683718513837c65266cc4b1b065f5c680/botocore-1.10.31.tar.gz"
+    sha256 "5e35278d27c5640c0ef3aec19cc846e4580c467057997d5428a10109105b9f10"
   end
 
   resource "CacheControl" do
@@ -51,11 +51,6 @@ class Mapbox < Formula
   resource "docutils" do
     url "https://files.pythonhosted.org/packages/84/f4/5771e41fdf52aabebbadecc9381d11dea0fa34e4759b4071244fa094804c/docutils-0.14.tar.gz"
     sha256 "51e64ef2ebfb29cae1faa133b3710143496eca21c530f3f71424d77687764274"
-  end
-
-  resource "futures" do
-    url "https://files.pythonhosted.org/packages/1f/9e/7b2ff7e965fc654592269f2906ade1c7d705f1bf25b7d469fa153f7d19eb/futures-3.2.0.tar.gz"
-    sha256 "9ec02aa7d674acb8618afb127e27fde7fc68994c0437ad759fa094a574adb265"
   end
 
   resource "idna" do
@@ -119,6 +114,7 @@ class Mapbox < Formula
   end
 
   def install
+    virtualenv_create(libexec, "python3")
     virtualenv_install_with_resources
   end
 
